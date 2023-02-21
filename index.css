@@ -21,22 +21,31 @@ body {
   box-sizing: border-box;
 }
 .ad {
-  border: 1px solid gray;
+  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .vertical-ad-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 250px;
-  background-color: gray;
-
+  border: 1px solid rgb(0, 0, 0, 0.2);
   margin: 10px;
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 .horizontal-ad-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 450px;
   height: 100px;
   margin: 10px;
-  background-color: gray;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 .map {
@@ -47,18 +56,18 @@ body {
 }
 
 .vertical-ad {
-  width: 100px;
+  width: 160px;
   height: 250px;
   margin: 10px;
   margin-top: 0px;
-  background-color: green;
+  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .horizontal-ad {
   width: 450px;
   height: 100px;
   margin: 10px;
-  background-color: aqua;
+  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .bottom-box {
