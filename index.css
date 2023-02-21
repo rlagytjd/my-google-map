@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 500px;
+  min-height: 500px;
+}
+
+.top-box {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 120px);
+  padding-top: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.ad {
+  border: 1px solid gray;
+}
+
+.vertical-ad-info {
+  width: 100px;
+  height: 250px;
+  background-color: gray;
+
+  margin: 10px;
+}
+
+.horizontal-ad-info {
+  width: 450px;
+  height: 100px;
+  margin: 10px;
+  background-color: gray;
+}
+
+.map {
+  width: 100%;
+  height: 80%;
+  background-color: Red;
+  margin: 10px;
+}
+
+.vertical-ad {
+  width: 100px;
+  height: 250px;
+  margin: 10px;
+  margin-top: 0px;
+  background-color: green;
+}
+
+.horizontal-ad {
+  width: 450px;
+  height: 100px;
+  margin: 10px;
+  background-color: aqua;
+}
+
+.bottom-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.row {
+  display: flex;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
