@@ -124,7 +124,7 @@ iframe {
   max-width: 768px;
   width: calc(100% - 130px);
   top: 0;
-  left: 0;
+  right: 0;
   margin-left: 3px;
 }
 
