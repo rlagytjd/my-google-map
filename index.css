@@ -15,13 +15,11 @@ body {
 .top-box {
   display: flex;
   width: 100%;
-  height: calc(100% - 120px);
+  height: 100%;
+  /* height: calc(100% - 120px); */
   padding-top: 10px;
   padding-right: 10px;
   box-sizing: border-box;
-}
-.ad {
-  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .vertical-ad-info {
@@ -30,7 +28,7 @@ body {
   align-items: center;
   width: 100px;
   height: 250px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
+  /* border: 1px solid rgb(0, 0, 0, 0.2); */
   margin: 10px;
   color: rgb(0, 0, 0, 0.5);
   font-size: 14px;
@@ -40,40 +38,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 320px;
   height: 100px;
   margin: 10px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
+  /* border: 1px solid rgb(0, 0, 0, 0.2); */
   color: rgb(0, 0, 0, 0.5);
   font-size: 14px;
 }
 
-.map {
-  width: 100%;
-  height: 80%;
-  background-color: Red;
-  margin: 10px;
-}
-
 .vertical-ad {
-  width: 160px;
-  height: 250px;
+  width: 100%;
+  max-width: 160px;
+  max-height: 600px;
+  height: 100%;
   margin: 10px;
   margin-top: 0px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .horizontal-ad {
-  width: 450px;
+  width: 320px;
   height: 100px;
   margin: 10px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 .bottom-box {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .row {
@@ -81,5 +72,63 @@ body {
 }
 .col {
   display: flex;
+
   flex-direction: column;
+}
+
+.content-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  /* max-height: calc(100% - 130px); */
+}
+
+@media screen and (max-width: 1200px) {
+  .content-box {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+  .bottom-box {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .vertical-ad {
+    display: none;
+  }
+
+  iframe {
+    max-height: 300px;
+    min-height: 300px;
+    height: 300px;
+    margin: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+  }
+}
+iframe {
+  min-height: 700px;
+  border: none;
+}
+@media screen and (min-width: 1200px) {
+  .vertical-ad {
+    display: flex;
+  }
+}
+
+#absolute-insta-ad {
+  position: absolute;
+  max-height: 150px;
+  max-width: 768px;
+  width: calc(100% - 130px);
+  top: 0;
+  left: 0;
+  margin-left: 3px;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
 }
